@@ -14,15 +14,10 @@ export default function LoginForm() {
 		mode: 'onChange'
 	})
 
-	// const onSubmit = (data) => {
-	// 	alert(JSON.stringify(data))
-	// 	reset()
-	// }
-
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 
-	const { loading, error } = useSelector(state => state.user)
+	const { isLoading, error } = useSelector(state => state.user)
 	const dispatch = useDispatch()
 	const navigate = useNavigate()
 
@@ -75,7 +70,7 @@ export default function LoginForm() {
 					{errors?.Password && <p>{errors?.Password?.message || 'Error'}</p>}
 				</div>
 				{/*<input type='submit' disabled={!isValid} value='Sign in' />*/}
-				<button type='submit'>{loading ? 'Loading...' : 'Login'}</button>
+				<button type='submit'>{isLoading ? 'Loading...' : 'Login'}</button>
 				{error && (
 					<div className='text-white mt4' role='alert'>
 						{error}

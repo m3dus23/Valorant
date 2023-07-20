@@ -5,7 +5,7 @@ export const loginUser = createAsyncThunk(
 	'user/loginUser',
 	async userCredentials => {
 		const request = await axios.post(
-			`https://social-network.samuraijs.com/auth/login`,
+			`https://social-network.samuraijs.com/api/1.0/auth/login`,
 			userCredentials
 		)
 		const response = await request.data.data
