@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Valorant/static/css/main.d08aed2a.css",
-    "main.js": "/Valorant/static/js/main.2f1afef0.js",
+    "main.js": "/Valorant/static/js/main.2a097c8d.js",
     "static/media/sova.png": "/Valorant/static/media/sova.648f3a5080d5148fc3b9.png",
     "static/media/phoenix.png": "/Valorant/static/media/phoenix.af3fad61d292b4ff727a.png",
     "static/media/sage.png": "/Valorant/static/media/sage.6d77c776987d743cc990.png",
@@ -30,10 +30,10 @@
     "static/media/val.svg": "/Valorant/static/media/val.8fe2060f67d3a3f98b67cbfca5ccfd11.svg",
     "static/media/logo_valorant.svg": "/Valorant/static/media/logo_valorant.17053c3618dd74711d72395e91355c62.svg",
     "main.d08aed2a.css.map": "/Valorant/static/css/main.d08aed2a.css.map",
-    "main.2f1afef0.js.map": "/Valorant/static/js/main.2f1afef0.js.map"
+    "main.2a097c8d.js.map": "/Valorant/static/js/main.2a097c8d.js.map"
   },
   "entrypoints": [
     "static/css/main.d08aed2a.css",
-    "static/js/main.2f1afef0.js"
+    "static/js/main.2a097c8d.js"
   ]
 }
