@@ -6,9 +6,9 @@ const Router = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route element={<App />} path='/Valorant' />
+				<Route element={<App />} path='/' />
 				<Route element={<LoginPage />} path='/login' />
-				<Route element={<div>Not Found</div>} path='*' />
+				{/* <Route element={<div>Not Found</div>} path='*' /> */}
 			</Routes>
 		</BrowserRouter>
 	)
