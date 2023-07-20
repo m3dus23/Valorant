@@ -1,0 +1,25 @@
+.card {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  background-color: #1F2326;
+  width: 300px;
+
+  &:hover .animateHero {
+    transform: scale(1.03);
+  }
+
+  &:hover .animateName {
+    transform: translateX(-5px);
+  }
+
+  .animateHero {
+    height: 100%;
+    transition: transform .5s;
+  }
+
+  .animateName {
+    transition: transform .5s;
+  }
+
+}

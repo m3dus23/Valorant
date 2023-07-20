@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); /*&::-webkit-scrollbar {
+      display: none;
+    }*/
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #FF4656;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #1F2326;
+  }
+}
+
+.App {
+  font-family: 'Michroma', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}

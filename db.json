@@ -1,0 +1,18 @@
+{
+  "user": [
+    {
+      "id": "test@test.com",
+      "name": "Dmytro",
+      "password": "password",
+      "email": "m3dusn1k@gmail.com",
+      "gender": "male"
+    },
+    {
+      "name": "Dmytro",
+      "password": "password",
+      "email": "m3dusn1k@gmail.com",
+      "gender": "male",
+      "id": "xtJilA-"
+    }
+  ]
+}

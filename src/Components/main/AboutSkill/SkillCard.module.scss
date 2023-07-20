@@ -1,0 +1,38 @@
+.skillCard {
+  position: relative;
+  display: flex;
+  background-color: #F8F8F8;
+  width: 540px;
+  padding: 1.5rem 2.5rem;
+  gap: 4rem;
+  border-width: 2px;
+  border-color: black;
+  border-top-left-radius: 10px;
+  cursor: pointer;
+
+  &:hover .animateImg {
+    animation: swing 1s ease-in-out;
+  }
+
+  @keyframes swing {
+    15% {
+      transform: translateY(5px);
+    }
+    30% {
+      transform: translateY(-5px);
+    }
+    50% {
+      transform: translateY(3px);
+    }
+    65% {
+      transform: translateY(-3px);
+    }
+    80% {
+      transform: translateY(2px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+}

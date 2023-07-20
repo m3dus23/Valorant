@@ -1,0 +1,18 @@
+.blackLink {
+  transition: color 0.3s;
+  padding: 10px 0;
+
+  &:hover {
+    color: black;
+  }
+}
+
+
+.primaryLink {
+  transition: color 0.3s;
+  padding: 10px 0;
+
+  &:hover {
+    color: #FF4656;
+  }
+}
