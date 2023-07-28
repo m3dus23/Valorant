@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
+import Loader from '../../../Components/loader/Loader'
 import { loginUser } from '../../../store/user.slice'
 import styles from './LoginForm.module.scss'
 
@@ -70,7 +71,7 @@ export default function LoginForm() {
 					{errors?.Password && <p>{errors?.Password?.message || 'Error'}</p>}
 				</div>
 				{/*<input type='submit' disabled={!isValid} value='Sign in' />*/}
-				<button type='submit'>{isLoading ? 'Loading...' : 'Login'}</button>
+				<button type='submit'>{isLoading ? <Loader /> : 'Login'}</button>
 				{error && (
 					<div className='text-white mt4' role='alert'>
 						{error}

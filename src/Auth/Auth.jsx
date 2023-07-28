@@ -4,32 +4,32 @@ import avatar from '../img/header/avatar.png'
 import '../ui/LoginButton.scss'
 import '../ui/LogoutButton.scss'
 
-// function getUser() {
-// 	let user = localStorage.getItem('user')
-//
-// 	if (user) {
-// 		try {
-// 			user = JSON.parse(user)
-// 		} catch (error) {
-// 			console.error('Error parsing user data:', error)
-// 			user = null
-// 		}
-// 	} else {
-// 		user = null
-// 	}
-//
-// 	return user
-// }
-
 function getUser() {
 	let user = localStorage.getItem('user')
+
 	if (user) {
-		user = JSON.parse(user)
+		try {
+			user = JSON.parse(user)
+		} catch (error) {
+			console.error('Error parsing user data:', error)
+			user = null
+		}
 	} else {
 		user = null
 	}
+
 	return user
 }
+
+// function getUser() {
+// 	let user = localStorage.getItem('user')
+// 	if (user) {
+// 		user = JSON.parse(user)
+// 	} else {
+// 		user = null
+// 	}
+// 	return user
+// }
 
 const Auth = () => {
 	const [user, setUser] = useState(getUser())
